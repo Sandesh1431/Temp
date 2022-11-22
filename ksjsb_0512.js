@@ -16,7 +16,7 @@ Update: 0512版本，修复风控报错问题。需要放完整ck，格式：kpn
 hostname = api.kuaisho*.com
 hostname = open.kuaisho*.com
 */
-const $$ = Envcc('');
+const $$ = Envcc('');//const
 let acckey = $$["isNode"]() ? process["env"]["cdkey"] ? process["env"]["cdkey"] : '' : $$["getdata"]("cdkey") ? $$["getdata"]("cdkey") : '',
     all_msg = '',
     mac = '';
